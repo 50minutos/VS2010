@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "134-NonGenericCollections", "134-NonGenericCollections\134-NonGenericCollections.csproj", "{DCD46AE1-54F1-4430-8D02-192A54B2D32D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCD46AE1-54F1-4430-8D02-192A54B2D32D}.Debug|x86.ActiveCfg = Debug|x86
+		{DCD46AE1-54F1-4430-8D02-192A54B2D32D}.Debug|x86.Build.0 = Debug|x86
+		{DCD46AE1-54F1-4430-8D02-192A54B2D32D}.Release|x86.ActiveCfg = Release|x86
+		{DCD46AE1-54F1-4430-8D02-192A54B2D32D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

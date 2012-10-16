@@ -1,0 +1,118 @@
+﻿*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    font-family: Trebuchet MS, Verdana, Arial;
+    font-size: 90%;
+}
+
+#borda
+{
+    background: #fff url(../../Images/borda.png) repeat-y center top;
+}
+
+#footer, #content
+{
+    width: 940px;
+}
+
+#footer, #content, #header
+{
+    display: block;
+    margin: 0px auto;
+}
+
+#footer, #content
+{
+    padding: 10px;
+}
+
+#footer
+{
+    text-align: left;
+    background-color: #ccc;
+    font-size: 80%;
+}
+
+#footer p
+{
+    text-align: right;
+}
+
+#footer a
+{
+    float: left;
+}
+
+#content
+{
+    background-color: White;
+}
+
+#content p
+{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+#content h1
+{
+    font-size: 140%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#content img
+{
+    border: none;
+    float: left;
+    margin-right: 10px;
+}
+
+#header
+{
+    width: 960px;
+    height: 150px;
+    background-image: url(../../Images/header.png);
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #930;
+}
+
+#header ul
+{
+    list-style: none;
+}
+
+#header ul li
+{
+    float: left;
+    margin-right: 10px;
+    margin-top: 126px;
+}
+
+#LoginView1_LoginName1, #LoginView1_LoginStatus1
+{
+    float: right;
+    margin: 126px 10px 0px 0px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#header ul li a
+{
+    padding: 7px 20px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    border-top: 5px solid #999;
+}
+
+#header ul li a:hover
+{
+    border-top: 5px solid #930;
+    background-color: #f96;
+}

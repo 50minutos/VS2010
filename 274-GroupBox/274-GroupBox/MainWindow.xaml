@@ -1,0 +1,15 @@
+﻿<Window x:Class="_274_GroupBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <GroupBox Name="Grupo" Header="qual o seu time?" Padding="5" Margin="5" VerticalAlignment="Top">
+        <StackPanel>
+            <RadioButton Margin="3">São Paulo</RadioButton>
+            <RadioButton Margin="3">Palmeiras</RadioButton>
+            <RadioButton Margin="3">Curíntia</RadioButton>
+            <RadioButton Margin="3">Santos</RadioButton>
+            <Button Margin="200 3 0 0">OK</Button>
+        </StackPanel>
+    </GroupBox>
+
+</Window>

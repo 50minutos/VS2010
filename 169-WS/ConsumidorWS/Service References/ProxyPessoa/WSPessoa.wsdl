@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://50minutos.com.br/exemplos/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://50minutos.com.br/exemplos/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://50minutos.com.br/exemplos/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Somar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SomarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SomarResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Selecionar">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelecionarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelecionarResult" type="tns:ArrayOfPessoa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPessoa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Pessoa" nillable="true" type="tns:Pessoa" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Pessoa">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CodPessoa" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomePessoa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SexoPessoa" type="s1:char" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="char">
+        <s:restriction base="s:unsignedShort" />
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="SomarSoapIn">
+    <wsdl:part name="parameters" element="tns:Somar" />
+  </wsdl:message>
+  <wsdl:message name="SomarSoapOut">
+    <wsdl:part name="parameters" element="tns:SomarResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelecionarSoapIn">
+    <wsdl:part name="parameters" element="tns:Selecionar" />
+  </wsdl:message>
+  <wsdl:message name="SelecionarSoapOut">
+    <wsdl:part name="parameters" element="tns:SelecionarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSPessoaSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Somar">
+      <wsdl:input message="tns:SomarSoapIn" />
+      <wsdl:output message="tns:SomarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Selecionar">
+      <wsdl:input message="tns:SelecionarSoapIn" />
+      <wsdl:output message="tns:SelecionarSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSPessoaSoap" type="tns:WSPessoaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://50minutos.com.br/exemplos/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Somar">
+      <soap:operation soapAction="http://50minutos.com.br/exemplos/Somar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selecionar">
+      <soap:operation soapAction="http://50minutos.com.br/exemplos/Selecionar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSPessoaSoap12" type="tns:WSPessoaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://50minutos.com.br/exemplos/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Somar">
+      <soap12:operation soapAction="http://50minutos.com.br/exemplos/Somar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selecionar">
+      <soap12:operation soapAction="http://50minutos.com.br/exemplos/Selecionar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSPessoa">
+    <wsdl:port name="WSPessoaSoap" binding="tns:WSPessoaSoap">
+      <soap:address location="http://localhost:3190/WSPessoa.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSPessoaSoap12" binding="tns:WSPessoaSoap12">
+      <soap12:address location="http://localhost:3190/WSPessoa.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

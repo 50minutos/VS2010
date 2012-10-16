@@ -1,0 +1,23 @@
+﻿<Window x:Class="_275_TabControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <TabControl Margin="5">
+        <TabItem Header="Gosta de">
+            <StackPanel Margin="3">
+                <CheckBox Margin="3" IsChecked="True">Mãe</CheckBox>
+                <CheckBox Margin="3">Pai</CheckBox>
+                <CheckBox Margin="3">Irmãos</CheckBox>
+                <CheckBox Margin="3" IsChecked="True">Filhos</CheckBox>
+                <CheckBox Margin="3" IsEnabled="False">Sogra</CheckBox>
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Não gosta de">
+            <StackPanel Margin="3">
+                <CheckBox Margin="3" IsChecked="True">Cebola</CheckBox>
+                <CheckBox Margin="3">Sorvete</CheckBox>
+                <CheckBox Margin="3">Bala</CheckBox>
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+</Window>

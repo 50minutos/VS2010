@@ -1,0 +1,22 @@
+﻿<Window x:Class="_265_GridSpan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+      <Grid x:Name="LayoutRoot" ShowGridLines="True" Background="Gray" 
+          HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="10" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" Text="Span de colunas"></TextBlock>
+        <Button Margin="10,10,5,10" Padding="3" 
+    Grid.Row="1" Grid.Column="1" Content="OK"></Button>
+        <Button Margin="5,10,10,10" Padding="3" 
+    Grid.Row="1" Grid.Column="2" Content="Cancel"></Button>
+    </Grid>
+</Window>

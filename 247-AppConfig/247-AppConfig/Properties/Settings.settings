@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="_247_AppConfig.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="varUsuario" Type="System.String" Scope="User">
+      <Value Profile="(Default)">xpto</Value>
+    </Setting>
+    <Setting Name="varAplicacao" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">xpto</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

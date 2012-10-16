@@ -1,0 +1,43 @@
+﻿Teoria da Relatividade
+
+O princípio da relatividade foi surgindo ao longo da história da filosofia e da ciência como consequência da compreensão progressiva de que dois referenciais diferentes oferecem visões perfeitamente plausíveis, ainda que diferentes, de um mesmo efeito.
+
+O princípio da relatividade foi introduzido na ciência moderna por Galileu e afirma que o movimento, ou pelo menos o movimento retilíneo uniforme, só tem algum significado quando comparado com algum outro ponto de referência. Segundo o princípio da relatividade de Galileu, não existe sistema de referência absoluto pelo qual todos os outros movimentos possam ser medidos. Galileu referia-se à posição relativa do Sol (ou sistema solar) com as estrelas de fundo. Com isso, elaborou um conjunto de transformações chamadas 'transformadas de Galileu', compostas de cinco leis para sintetizar as leis do movimento quando a mudanças de referenciais. Mas naquele tempo acreditava-se que a propagação eletromagnética, ou seja, a luz, fosse instantânea; e, portanto, Galileu e mesmo Newton não consideravam em seus cálculos que os acontecimentos observados fossem dissociados dos fatos. Esse fenômeno que separava a luz do som, aqui na Terra, seria mais acentuado quando observado a grandes distâncias, e já mostrava, em fins do século XIX, a importância de estabelecer normas aplicáveis a uma teoria do tempo.
+
+Muitos historiadores e físicos atribuem a criação da famosa fórmula que explica a relação entre massa e energia ao físico italiano Olinto De Pretto, que, segundo especulações, desenvolveu a fórmula dois anos antes que Albert Einstein, e que teria previsto o seu uso para fins bélicos e catastróficos, como o desenvolvimento de bombas atômicas. Apesar disso, foi Einstein o primeiro a dar corpo à teoria, juntando os diversos fatos até então desconexos e os interpretando corretamente.
+
+Postulados da relatividade
+
+1. Primeiro postulado (princípio da relatividade)
+
+As leis que governam as mudanças de estado em quaisquer sistemas físicos tomam a mesma forma em quaisquer sistemas de coordenadas inerciais.
+
+Nas palavras de Einstein:
+
+"...existem sistemas cartesianos de coordenadas - os chamados sistemas de inércia - relativamente aos quais as leis da mecânica (mais geralmente as leis da física) se apresentam com a forma mais simples. Podemos assim admitir a validade da seguinte proposição: se K é um sistema de inércia, qualquer outro sistema K' em movimento de translação uniforme relativamente a K, é também um sistema de inércia."
+
+2. Segundo postulado de Borh (invariância da velocidade da luz )
+
+A luz tem velocidade invariante igual a c em relação a qualquer sistema de coordenadas inercial.
+
+A velocidade da luz no vácuo é a mesma para todos os observadores em referenciais inerciais e não depende da velocidade da fonte que está emitindo a luz nem tampouco do observador que a está medindo. A luz não requer qualquer meio (como o éter) para se propagar. De fato, a existência do éter é mesmo contraditória com o conjunto dos fatos e com as leis da mecânica.
+
+Apesar do primeiro postulado ser quase senso comum, o segundo não é tão óbvio. Mas ele é de certa forma uma consequência de se utilizar o primeiro postulado ao se analisarem as equações do eletromagnetismo. Através das transformações de Lorentz pode-se demonstrar o segundo postulado.
+
+Porém, é necessário dizer que Einstein, segundo alguns, não quis basear a relatividade nas equações de Maxwell, talvez porque entendesse que a validade destas não era ilimitada. Isto decorre da existência do fóton, o que tacitamente indica que as equações de campo previstas por Maxwell não podem ser rigorosamente lineares.
+
+Consequências da relatividade especial
+
+A relatividade especial tem consequências consideradas bizarras por muitas pessoas. Esta opinião é perfeitamente compreensível, pois estas consequências estão relacionadas a comparações entre observadores movimentando-se a velocidades próximas à da luz, e o ser humano não tem nenhuma experiência com viagens a velocidades comparáveis à velocidade da luz. Eis algumas das consequências:
+
+O intervalo de tempo em um referencial em movimento em relação a um observador externo parece ser, para este, maior que o seu próprio intervalo de tempo. Explicando melhor, se um fenômeno periódico que no referencial de um dado observador inercial ocorre com um período T parece ocorrer em um período T' maior num referencial inercial movendo-se em relação a este.
+Eventos que ocorrem simultaneamente em um referencial inercial não são simultâneos em outro referencial em movimento relativo (falta de simultaneidade).
+As dimensões de objetos medidos em um referencial podem ser diferentes para um outro observador em outro referencial em movimento. Se um corpo está em movimento ao longo de um eixo, a dimensão do corpo ao longo deste eixo parecerá menor do que quando o mesmo corpo estiver parado em relação ao referencial do observador (contração dos comprimentos) .
+
+Aparentes paradoxos da Relatividade Restrita
+
+GêmeosHá aqui dois aspectos diferentes a serem considerados. O primeiro é que, no contexto da mecânica clássica, a dilatação temporal não existe, o que levaria o gêmeo que viajou na nave estranhar a disparidade dos tempos decorridos experimentados por ele e pelos que ficaram na Terra.
+
+Porém, o real paradoxo aqui é o fato de que, mesmo se aceitando a dilatação temporal, o gêmeo que viajou pelo universo a bordo da nave, sob velocidades próximas à da luz, tem todo o direito (no escopo da RR) de alegar que a Terra é que se movia com velocidade próxima à da luz. Assim, ele acha que a Terra é que deveria ter tido o seu fluxo de tempo alterado.
+
+O entendimento perfeito desse efeito, porém, só pode ocorrer se lembrar que a nave percorreu uma trajetória maior (considerando-se a trajetória no espaço-tempo) e, além do mais, ambos os referenciais em algum momento sofrem acelerações.

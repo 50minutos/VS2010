@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "265-GridSpan", "265-GridSpan\265-GridSpan.csproj", "{40D98907-9913-4C42-87A3-F2C783DC4BC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40D98907-9913-4C42-87A3-F2C783DC4BC1}.Debug|x86.ActiveCfg = Debug|x86
+		{40D98907-9913-4C42-87A3-F2C783DC4BC1}.Debug|x86.Build.0 = Debug|x86
+		{40D98907-9913-4C42-87A3-F2C783DC4BC1}.Release|x86.ActiveCfg = Release|x86
+		{40D98907-9913-4C42-87A3-F2C783DC4BC1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

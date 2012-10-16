@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="_293_Props.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+<Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+     Margin="30" x:Name="Pergunta"  
+     TextWrapping="Wrap" FontFamily="Verdana" FontSize="16" 
+     Grid.Row="0" Text="Qual a tecnologia Microsoft é equivalente, em alguns aspectos, ao Adobe Flash?" IsReadOnly="True">
+        </TextBox>
+
+        <Button VerticalAlignment="Center" HorizontalAlignment="Center" 
+     Margin="0,0,0,0" Width="127" Height="23" x:Name="Botao" 
+     Click="Botao_Click"  Grid.Row="1" Content="Responder">
+        </Button>
+
+        <TextBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+     Margin="20" x:Name="Resposta" TextWrapping="Wrap" 
+     IsReadOnly="True" FontFamily="Verdana" FontSize="24" Foreground="Green" 
+     Grid.Row="2" Text="">
+        </TextBox>
+
+        <Grid.Background>
+            <LinearGradientBrush>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.00" Color="#bd1a20" />
+                    <GradientStop Offset="0.25" Color="#000000" />
+                    <GradientStop Offset="0.50" Color="#f00f00" />
+                    <GradientStop Offset="0.75" Color="#000000" />
+                    <GradientStop Offset="1.00" Color="#bd1a20" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Grid.Background>
+    </Grid>
+</UserControl>

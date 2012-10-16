@@ -1,0 +1,12 @@
+﻿<Window x:Class="_258_MinMax.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="210" Width="525">
+    <StackPanel Margin="3">
+        <Label Margin="3" HorizontalAlignment="Center">Escolha:</Label>
+        <Button Margin="3" MaxWidth="300" MinWidth="200">Botão 1</Button>
+        <Button Margin="3" MaxWidth="300" MinWidth="200">Botão 2</Button>
+        <Button Margin="3" MaxWidth="300" MinWidth="200">Botão 3</Button>
+        <Button Margin="3" MaxWidth="400" MinWidth="150">Botão 4</Button>
+    </StackPanel>
+</Window>

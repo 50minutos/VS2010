@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "308-MouseWheel", "308-MouseWheel\308-MouseWheel.csproj", "{FC9045FE-64B1-458E-B011-1D319563889E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC9045FE-64B1-458E-B011-1D319563889E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9045FE-64B1-458E-B011-1D319563889E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9045FE-64B1-458E-B011-1D319563889E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9045FE-64B1-458E-B011-1D319563889E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

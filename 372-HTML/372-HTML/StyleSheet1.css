@@ -1,0 +1,35 @@
+﻿/*element*/
+h1
+{
+    color: #FF9900;
+    font-family: 'Trebuchet MS';
+    font-size: larger;
+    font-style: italic;
+}
+
+h1, p
+{
+    text-align: center;
+}
+
+/*element id*/
+#mensagem
+{
+    text-align: right;
+    background-color: #cccccc;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/*class*/
+.center
+{
+    text-align: center;
+}
+
+#d h1
+{
+    color: Green;
+}

@@ -1,0 +1,40 @@
+﻿<Window x:Class="_273_ScrollViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <ScrollViewer Margin="30" Background="Khaki">
+        <Grid x:Name="LayoutRoot" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Row="0" Grid.Column="0" Margin="3" 
+                     Height="Auto" VerticalAlignment="Center"></TextBox>
+            <Button Grid.Row="0" Grid.Column="1" Margin="3" 
+                    Padding="2" Content="Texto do botão"></Button>
+            <TextBox Grid.Row="1" Grid.Column="0" Margin="3" 
+                     Height="Auto" VerticalAlignment="Center"></TextBox>
+            <Button Grid.Row="1" Grid.Column="1" Margin="3" 
+                    Padding="2" Content="Texto do botão"></Button>
+            <TextBox Grid.Row="2" Grid.Column="0" Margin="3" 
+                     Height="Auto" VerticalAlignment="Center"></TextBox>
+            <Button Grid.Row="2" Grid.Column="1" Margin="3" 
+                    Padding="2" Content="Texto do botão"></Button>
+            <TextBox Grid.Row="3" Grid.Column="0" Margin="3" 
+                     Height="Auto" VerticalAlignment="Center"></TextBox>
+            <Button Grid.Row="3" Grid.Column="1" Margin="3" 
+                    Padding="2" Content="Texto do botão"></Button>
+            <TextBox Grid.Row="4" Grid.Column="0" Margin="3" 
+                     Height="Auto" VerticalAlignment="Center"></TextBox>
+            <Button Grid.Row="4" Grid.Column="1" Margin="3" 
+                    Padding="2" Content="Texto do botão"></Button>
+        </Grid>
+    </ScrollViewer>
+</Window>

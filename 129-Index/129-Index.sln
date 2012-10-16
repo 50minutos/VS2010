@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "129-Index", "129-Index\129-Index.csproj", "{EE273989-E465-4B9F-B344-2D7F5194F415}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE273989-E465-4B9F-B344-2D7F5194F415}.Debug|x86.ActiveCfg = Debug|x86
+		{EE273989-E465-4B9F-B344-2D7F5194F415}.Debug|x86.Build.0 = Debug|x86
+		{EE273989-E465-4B9F-B344-2D7F5194F415}.Release|x86.ActiveCfg = Release|x86
+		{EE273989-E465-4B9F-B344-2D7F5194F415}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

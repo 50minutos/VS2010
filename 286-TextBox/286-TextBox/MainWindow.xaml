@@ -1,0 +1,18 @@
+﻿<Window x:Class="_286_TextBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Language="en" Name="txt" VerticalScrollBarVisibility="Hidden" TextWrapping="Wrap" AcceptsReturn="True" SelectionChanged="txt_SelectionChanged" SpellCheck.IsEnabled="True" MouseEnter="txt_MouseEnter" MouseLeave="txt_MouseLeave">Microsoft Corporation (NASDAQ: MSFT, HKEX: 4338) is a multinational computer technology corporation that develops, manufactures, licenses, and supports a wide range of software products for computing devices.[9] Headquartered in Redmond, Washington, USA, its most profitable products are the Microsoft Windows operating system and the Microsoft Office suite of productivity software. As of the third quarter of 2009, Microsoft was ranked as the third largest company in the world, following PetroChina and ExxonMobil. It is also one of the largest technological corporations in the world.</TextBox>
+        <ScrollViewer Foreground="Blue" Grid.Row="1" Margin="0,10,0,5" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock>O texto selecionado é:</TextBlock>
+                <TextBlock  Name="txtSelection" TextWrapping="Wrap"></TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

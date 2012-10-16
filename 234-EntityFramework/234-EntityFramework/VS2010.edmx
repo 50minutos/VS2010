@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="VS2010Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="VS2010ModelStoreContainer">
+          <EntitySet Name="FILHO" EntityType="VS2010Model.Store.FILHO" store:Type="Tables" store:Schema="dbo" store:Name="FILHO">
+            <DefiningQuery>SELECT 
+      [FILHO].[COD_FILHO] AS [COD_FILHO], 
+      [FILHO].[NOME_FILHO] AS [NOME_FILHO], 
+      [FILHO].[COD_PAI] AS [COD_PAI]
+      FROM [dbo].[FILHO] AS [FILHO]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PESSOA" EntityType="VS2010Model.Store.PESSOA" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PONTO" EntityType="VS2010Model.Store.PONTO" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PONTO2" EntityType="VS2010Model.Store.PONTO2" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__FILHO__COD_PAI__117F9D94" Association="VS2010Model.Store.FK__FILHO__COD_PAI__117F9D94">
+            <End Role="PESSOA" EntitySet="PESSOA" />
+            <End Role="FILHO" EntitySet="FILHO" />
+          </AssociationSet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'VS2010.dbo.FILHO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="FILHO">
+          <Key>
+            <PropertyRef Name="COD_FILHO" />
+          </Key>
+          <Property Name="COD_FILHO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NOME_FILHO" Type="varchar" MaxLength="50" />
+          <Property Name="COD_PAI" Type="int" />
+        </EntityType>
+        <EntityType Name="PESSOA">
+          <Key>
+            <PropertyRef Name="COD_PESSOA" />
+          </Key>
+          <Property Name="COD_PESSOA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NOME_PESSOA" Type="varchar" MaxLength="50" />
+          <Property Name="SEXO_PESSOA" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="PONTO">
+          <Key>
+            <PropertyRef Name="COD_PONTO" />
+          </Key>
+          <Property Name="COD_PONTO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="COD_FUNCIONARIO" Type="int" />
+          <Property Name="DATA_ENTRADA" Type="datetime" />
+          <Property Name="DATA_SAIDA" Type="datetime" />
+        </EntityType>
+        <EntityType Name="PONTO2">
+          <Key>
+            <PropertyRef Name="COD_PONTO" />
+          </Key>
+          <Property Name="COD_PONTO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="COD_FUNCIONARIO" Type="int" />
+          <Property Name="COD_TIPO" Type="int" />
+          <Property Name="DATA" Type="datetime" />
+        </EntityType>
+        <Association Name="FK__FILHO__COD_PAI__117F9D94">
+          <End Role="PESSOA" Type="VS2010Model.Store.PESSOA" Multiplicity="0..1" />
+          <End Role="FILHO" Type="VS2010Model.Store.FILHO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PESSOA">
+              <PropertyRef Name="COD_PESSOA" />
+            </Principal>
+            <Dependent Role="FILHO">
+              <PropertyRef Name="COD_PAI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="USP_PESSOA_INS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="COD_PESSOA" Type="int" Mode="In" />
+          <Parameter Name="NOME_PESSOA" Type="varchar" Mode="In" />
+          <Parameter Name="SEXO_PESSOA" Type="char" Mode="In" />
+        </Function>
+        <Function Name="USP_SOMA_OUTPUT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="X" Type="int" Mode="In" />
+          <Parameter Name="Y" Type="int" Mode="In" />
+          <Parameter Name="SOMA" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="USP_SOMA_RETURN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="X" Type="int" Mode="In" />
+          <Parameter Name="Y" Type="int" Mode="In" />
+        </Function>
+        <Function Name="USP_SWAP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="X" Type="int" Mode="InOut" />
+          <Parameter Name="Y" Type="int" Mode="InOut" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VS2010Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="VS2010Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="FILHO" EntityType="VS2010Model.FILHO" />
+          <EntitySet Name="PESSOA" EntityType="VS2010Model.Pessoa" />
+          <EntitySet Name="PONTO" EntityType="VS2010Model.PONTO" />
+          <EntitySet Name="PONTO2" EntityType="VS2010Model.PONTO2" />
+          <AssociationSet Name="FK__FILHO__COD_PAI__117F9D94" Association="VS2010Model.FK__FILHO__COD_PAI__117F9D94">
+            <End Role="PESSOA" EntitySet="PESSOA" />
+            <End Role="FILHO" EntitySet="FILHO" />
+          </AssociationSet>
+          <FunctionImport Name="PessoaIns">
+            <Parameter Name="COD_PESSOA" Mode="In" Type="Int32" />
+            <Parameter Name="NOME_PESSOA" Mode="In" Type="String" />
+            <Parameter Name="SEXO_PESSOA" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Swap">
+            <Parameter Name="X" Mode="InOut" Type="Int32" />
+            <Parameter Name="Y" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="FILHO">
+          <Key>
+            <PropertyRef Name="COD_FILHO" />
+          </Key>
+          <Property Name="COD_FILHO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOME_FILHO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="COD_PAI" Type="Int32" />
+          <NavigationProperty Name="PESSOA" Relationship="VS2010Model.FK__FILHO__COD_PAI__117F9D94" FromRole="FILHO" ToRole="PESSOA" />
+        </EntityType>
+        <EntityType Name="Pessoa">
+          <Key>
+            <PropertyRef Name="CodPessoa" />
+          </Key>
+          <Property Name="CodPessoa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NomePessoa" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SexoPessoa" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="Filho" Relationship="VS2010Model.FK__FILHO__COD_PAI__117F9D94" FromRole="PESSOA" ToRole="FILHO" />
+        </EntityType>
+        <EntityType Name="PONTO">
+          <Key>
+            <PropertyRef Name="COD_PONTO" />
+          </Key>
+          <Property Name="COD_PONTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="COD_FUNCIONARIO" Type="Int32" />
+          <Property Name="DATA_ENTRADA" Type="DateTime" />
+          <Property Name="DATA_SAIDA" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="PONTO2">
+          <Key>
+            <PropertyRef Name="COD_PONTO" />
+          </Key>
+          <Property Name="COD_PONTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="COD_FUNCIONARIO" Type="Int32" />
+          <Property Name="COD_TIPO" Type="Int32" />
+          <Property Name="DATA" Type="DateTime" />
+        </EntityType>
+        <Association Name="FK__FILHO__COD_PAI__117F9D94">
+          <End Role="PESSOA" Type="VS2010Model.Pessoa" Multiplicity="0..1" />
+          <End Role="FILHO" Type="VS2010Model.FILHO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PESSOA">
+              <PropertyRef Name="CodPessoa" />
+            </Principal>
+            <Dependent Role="FILHO">
+              <PropertyRef Name="COD_PAI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VS2010ModelStoreContainer" CdmEntityContainer="VS2010Entities">
+          <EntitySetMapping Name="FILHO"><EntityTypeMapping TypeName="VS2010Model.FILHO"><MappingFragment StoreEntitySet="FILHO">
+            <ScalarProperty Name="COD_FILHO" ColumnName="COD_FILHO" />
+            <ScalarProperty Name="NOME_FILHO" ColumnName="NOME_FILHO" />
+            <ScalarProperty Name="COD_PAI" ColumnName="COD_PAI" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PESSOA"><EntityTypeMapping TypeName="VS2010Model.Pessoa"><MappingFragment StoreEntitySet="PESSOA">
+            <ScalarProperty Name="CodPessoa" ColumnName="COD_PESSOA" />
+            <ScalarProperty Name="NomePessoa" ColumnName="NOME_PESSOA" />
+            <ScalarProperty Name="SexoPessoa" ColumnName="SEXO_PESSOA" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PONTO"><EntityTypeMapping TypeName="VS2010Model.PONTO"><MappingFragment StoreEntitySet="PONTO">
+            <ScalarProperty Name="COD_PONTO" ColumnName="COD_PONTO" />
+            <ScalarProperty Name="COD_FUNCIONARIO" ColumnName="COD_FUNCIONARIO" />
+            <ScalarProperty Name="DATA_ENTRADA" ColumnName="DATA_ENTRADA" />
+            <ScalarProperty Name="DATA_SAIDA" ColumnName="DATA_SAIDA" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PONTO2"><EntityTypeMapping TypeName="VS2010Model.PONTO2"><MappingFragment StoreEntitySet="PONTO2">
+            <ScalarProperty Name="COD_PONTO" ColumnName="COD_PONTO" />
+            <ScalarProperty Name="COD_FUNCIONARIO" ColumnName="COD_FUNCIONARIO" />
+            <ScalarProperty Name="COD_TIPO" ColumnName="COD_TIPO" />
+            <ScalarProperty Name="DATA" ColumnName="DATA" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="PessoaIns" FunctionName="VS2010Model.Store.USP_PESSOA_INS" />
+          <FunctionImportMapping FunctionImportName="Swap" FunctionName="VS2010Model.Store.USP_SWAP" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="VS2010">
+        <EntityTypeShape EntityType="VS2010Model.FILHO" Width="1.5" PointX="3.875" PointY="0.875" Height="1.7879850260416672" IsExpanded="true" />
+        <EntityTypeShape EntityType="VS2010Model.Pessoa" Width="1.5" PointX="0.75" PointY="0.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="VS2010Model.PONTO" Width="1.5" PointX="1.25" PointY="3.75" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="VS2010Model.PONTO2" Width="1.5" PointX="3.875" PointY="3.5" Height="1.7879850260416657" IsExpanded="true" />
+        <AssociationConnector Association="VS2010Model.FK__FILHO__COD_PAI__117F9D94" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.7689925130208337" />
+          <ConnectorPoint PointX="3.875" PointY="1.7689925130208337" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

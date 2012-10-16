@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fc645ded-61fb-4605-9e1d-f050e9af089c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50000/Relatorio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Relatorio.wsdl" MetadataType="Wsdl" ID="299079d0-2291-444a-bc6c-f4d7b57df0f7" SourceId="1" SourceUrl="http://localhost:50000/Relatorio.svc?wsdl" />
+    <MetadataFile FileName="Relatorio.xsd" MetadataType="Schema" ID="2be41e16-20ec-4e6e-93b2-34b3ed0e7e46" SourceId="1" SourceUrl="http://localhost:50000/Relatorio.svc?xsd=xsd2" />
+    <MetadataFile FileName="Relatorio1.xsd" MetadataType="Schema" ID="d64e41f5-f64b-4f2e-99bf-7e039841a9ac" SourceId="1" SourceUrl="http://localhost:50000/Relatorio.svc?xsd=xsd0" />
+    <MetadataFile FileName="Relatorio2.xsd" MetadataType="Schema" ID="5ddd6ee4-8a27-4d14-b794-04db2ecad8e1" SourceId="1" SourceUrl="http://localhost:50000/Relatorio.svc?xsd=xsd1" />
+    <MetadataFile FileName="Relatorio.disco" MetadataType="Disco" ID="3956bac3-f69b-4bc5-9e04-198d4c6d4c87" SourceId="1" SourceUrl="http://localhost:50000/Relatorio.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

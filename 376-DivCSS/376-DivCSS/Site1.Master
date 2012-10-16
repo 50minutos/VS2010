@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="_376_DivCSS.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+        <ul>
+            <li>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/QuemSomos.aspx">Quem somos</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/FaleConosco.aspx">Fale conosco</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebForm1.aspx">Home</asp:HyperLink></li>
+        </ul>
+    </div>
+    <div id="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+        by 50minutos &copy; 2011
+    </div>
+    </form>
+</body>
+</html>

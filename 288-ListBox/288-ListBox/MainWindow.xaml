@@ -1,0 +1,48 @@
+﻿<Window x:Class="_288_ListBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="291" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="12"></RowDefinition>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="97*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Estado civil" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+        <ListBox Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <ListBoxItem Content="solteiro"></ListBoxItem>
+            <ListBoxItem Content="casado"></ListBoxItem>
+            <ListBoxItem Content="viúvo"></ListBoxItem>
+            <ListBoxItem Content="divorciado"></ListBoxItem>
+            <ListBoxItem Content="outros" ></ListBoxItem>
+        </ListBox>
+        <TextBlock Grid.Row="2" Text="O que achou do filme?" HorizontalAlignment="Center"></TextBlock>
+        <ListBox Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center" Height="90" Margin="156,0,137,0" Width="209">
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="user_accept.png" VerticalAlignment="Center"></Image>
+                    <TextBlock Text="Gostei" VerticalAlignment="Center" Padding="20"></TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="user_delete.png" VerticalAlignment="Center"></Image>
+                    <TextBlock Text="Não gostei" VerticalAlignment="Center" Padding="20"></TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+        </ListBox>
+        <TextBlock Grid.Row="4" Text="Estado civil" HorizontalAlignment="Center"></TextBlock>
+        <ComboBox Grid.Row="5" VerticalAlignment="Top" Width="200" Margin="152,0" Grid.RowSpan="2">
+            <ComboBoxItem Content="solteiro" IsSelected="true"></ComboBoxItem>
+            <ComboBoxItem Content="casado"></ComboBoxItem>
+            <ComboBoxItem Content="viúvo"></ComboBoxItem>
+            <ComboBoxItem Content="divorciado"></ComboBoxItem>
+            <ComboBoxItem Content="outros" ></ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>

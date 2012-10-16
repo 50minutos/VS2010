@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="_378_Login.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <div id="borda">
+      <div id="header">
+        <ul>
+            <li>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebForm1.aspx">home</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Restrito/WebForm1.aspx">funcionários</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/RestritoDiretoria/WebForm1.aspx">diretores</asp:HyperLink></li>
+        </ul>
+          <asp:LoginView ID="LoginView1" runat="server">
+              <LoggedInTemplate>
+                  <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                  <asp:LoginName ID="LoginName1" runat="server" />
+               </LoggedInTemplate>
+          </asp:LoginView>
+       
+    </div>
+    <div id="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/EsqueciMinhaSenha.aspx">esqueci minha senha</asp:HyperLink>
+        <p>by 50minutos &copy; 2011</p>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

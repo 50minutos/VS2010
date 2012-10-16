@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Usuario" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50000/Usuario.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50000/Usuario.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50000/Usuario.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BLL_DAL.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUsuario_Inserir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Inserir" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_Inserir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_Alterar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Alterar" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_Alterar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlterarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_Excluir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Excluir" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_Excluir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_Consultar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Consultar" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_Consultar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_ConsultarCodUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCodUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_ConsultarCodUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCodUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_Logar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logar" />
+  </wsdl:message>
+  <wsdl:message name="IUsuario_Logar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUsuario">
+    <wsdl:operation name="Inserir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuario/Inserir" message="tns:IUsuario_Inserir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuario/InserirResponse" message="tns:IUsuario_Inserir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuario/Alterar" message="tns:IUsuario_Alterar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuario/AlterarResponse" message="tns:IUsuario_Alterar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuario/Excluir" message="tns:IUsuario_Excluir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuario/ExcluirResponse" message="tns:IUsuario_Excluir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuario/Consultar" message="tns:IUsuario_Consultar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuario/ConsultarResponse" message="tns:IUsuario_Consultar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCodUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuario/ConsultarCodUsuario" message="tns:IUsuario_ConsultarCodUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuario/ConsultarCodUsuarioResponse" message="tns:IUsuario_ConsultarCodUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuario/Logar" message="tns:IUsuario_Logar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuario/LogarResponse" message="tns:IUsuario_Logar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUsuario" type="tns:IUsuario">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Inserir">
+      <soap:operation soapAction="http://tempuri.org/IUsuario/Inserir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap:operation soapAction="http://tempuri.org/IUsuario/Alterar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="http://tempuri.org/IUsuario/Excluir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar">
+      <soap:operation soapAction="http://tempuri.org/IUsuario/Consultar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCodUsuario">
+      <soap:operation soapAction="http://tempuri.org/IUsuario/ConsultarCodUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logar">
+      <soap:operation soapAction="http://tempuri.org/IUsuario/Logar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Usuario">
+    <wsdl:port name="BasicHttpBinding_IUsuario" binding="tns:BasicHttpBinding_IUsuario">
+      <soap:address location="http://localhost:50000/Usuario.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

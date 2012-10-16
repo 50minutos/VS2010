@@ -1,0 +1,12 @@
+﻿<Window x:Class="_257_StackPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="214" Width="525">
+    <StackPanel Orientation="Vertical">
+        <Label HorizontalAlignment="Center">Escolha uma opção:</Label>
+        <Button HorizontalAlignment="Left" Padding="10">botão 1</Button>
+        <Button HorizontalAlignment="Right">botão 2</Button>
+        <Button Margin="20">botão 3</Button>
+        <Button>botão 4</Button>
+    </StackPanel>
+</Window>

@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="_302_Alinhamento.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="332" d:DesignWidth="400">
+
+    <StackPanel Background="White" Height="331">
+        <TextBlock HorizontalAlignment="Center" Text="Pilha de botões"></TextBlock>
+        <Button HorizontalAlignment="Left" Content="Botão à esquerda"></Button>
+        <Button HorizontalAlignment="Right" Content="Botão à direita"></Button>
+        <Button Content="Botão 3" Margin="100"></Button>
+        <Button Content="Clique aqui" Name="Botao"></Button>
+    </StackPanel>
+</UserControl>

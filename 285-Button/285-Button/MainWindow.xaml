@@ -1,0 +1,55 @@
+﻿<Window x:Class="_285_Button.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="695" Width="525">
+    <StackPanel x:Name="layoutRoot" Height="545">
+        <TextBlock>Clique <Hyperlink NavigateUri="http://www.50minutos.com.br/blog" Click="hyperlink1_Click">aqui</Hyperlink> para acessar o blog</TextBlock>
+
+        <Button Content="Button com Tooltip" ToolTipService.HasDropShadow="False" ToolTipService.ToolTip="dica para o botão - sem sombra"  Click="Button_Click" Padding="10" Margin="10" HorizontalAlignment="Center"></Button>
+
+        <ToggleButton x:Name="toggleButton" Content="ToggleButton com tooltip gráfico" Click="ToggleButton_Click"  Padding="10" Margin="10" HorizontalAlignment="Center">
+            <ToolTipService.ToolTip>
+                <StackPanel>
+                    <Image Source="user_accept.png"></Image>
+                    <TextBlock Margin="3" Text="ajuda da bagaça"></TextBlock>
+                </StackPanel>
+            </ToolTipService.ToolTip>
+        </ToggleButton>
+
+        <RepeatButton Content="RepeatButton" Click="RepeatButton_Click"  Padding="10" Margin="10" HorizontalAlignment="Center"></RepeatButton>
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Margin="10" Padding="10">
+            <StackPanel>
+                <TextBlock Text="Gosta de:" Width="200" Margin="0, 0, 0, 10"></TextBlock>
+                <CheckBox Content="arroz" Width="200" IsChecked="True"></CheckBox>
+                <CheckBox Content="feijão" Width="200" IsChecked="False"></CheckBox>
+                <CheckBox Content="cebola" Width="200" IsChecked="{x:Null}"></CheckBox>
+            </StackPanel>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Margin="10" Padding="10">
+            <StackPanel>
+                <TextBlock Text="Time de futebol:" Width="200" Margin="0, 0, 0, 10"></TextBlock>
+                <RadioButton Content="São Paulo"></RadioButton>
+                <RadioButton Content="Curintia"></RadioButton>
+                <RadioButton Content="Santos"></RadioButton>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Margin="10" Padding="10">
+            <StackPanel>
+                <TextBlock Text="Sexo:" Width="200" Margin="0, 0, 0, 10"></TextBlock>
+                <RadioButton Content="Masculino"></RadioButton>
+                <RadioButton Content="Feminino"></RadioButton>
+            </StackPanel>
+        </Border>
+
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Text="clique aqui para ver um Popup" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown">
+        </TextBlock>
+
+        <Popup x:Name="PopUp" MaxWidth="200" MouseLeftButtonDown="PopUp_MouseLeftButtonDown" HorizontalAlignment="Center">
+            <Border Background="Lime">
+                <TextBlock Margin="20" Text="Mensagem popup"></TextBlock>
+            </Border>
+        </Popup>
+    </StackPanel>
+</Window>

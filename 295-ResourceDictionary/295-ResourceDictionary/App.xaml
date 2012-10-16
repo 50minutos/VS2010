@@ -1,0 +1,18 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             x:Class="_295_ResourceDictionary.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Recursos.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <LinearGradientBrush x:Key="FundoReverso">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.00" Color="White" />
+                    <GradientStop Offset="0.50" Color="Gray" />
+                    <GradientStop Offset="1.00" Color="Black" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

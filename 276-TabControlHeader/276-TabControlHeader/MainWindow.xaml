@@ -1,0 +1,35 @@
+﻿<Window x:Class="_276_TabControlHeader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <TabControl Margin="5">
+        <TabItem>
+            <TabItem.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="thumb_up.png" Width="16" Height="16"></Image>
+                    <Label>Gosta de</Label>
+                </StackPanel>
+            </TabItem.Header>
+            <StackPanel Margin="3">
+                <CheckBox Margin="3" IsChecked="True">Mãe</CheckBox>
+                <CheckBox Margin="3">Pai</CheckBox>
+                <CheckBox Margin="3">Irmãos</CheckBox>
+                <CheckBox Margin="3" IsChecked="True">Filhos</CheckBox>
+                <CheckBox Margin="3" IsEnabled="False">Sogra</CheckBox>
+            </StackPanel>
+        </TabItem>
+        <TabItem>
+            <TabItem.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="thumb_down.png" Width="16" Height="16"></Image>
+                    <Label>Não gosta de</Label>
+                </StackPanel>
+            </TabItem.Header>
+            <StackPanel Margin="3">
+                <CheckBox Margin="3" IsChecked="True">Cebola</CheckBox>
+                <CheckBox Margin="3">Sorvete</CheckBox>
+                <CheckBox Margin="3">Bala</CheckBox>
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+</Window>

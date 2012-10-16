@@ -1,0 +1,19 @@
+﻿<Window x:Class="_281_Transparencia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="netinho.jpg" AlignmentX="Center" AlignmentY="Center"></ImageBrush>
+        </Grid.Background>
+        <Button Name="button1" Click="button1_Click" HorizontalAlignment="center" VerticalAlignment="Center" Padding="50" BorderBrush="Transparent">
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="Transparent" Offset="0.2"></GradientStop>
+                    <GradientStop Color="#ff0" Offset="0.8"></GradientStop>
+                </LinearGradientBrush>
+            </Button.Background>
+            clique aqui
+        </Button>
+    </Grid>
+</Window>

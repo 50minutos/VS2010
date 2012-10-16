@@ -1,0 +1,26 @@
+﻿<Window x:Class="_271_GridLayoutDinamico.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Button Name="Voltar" Margin="10,10,10,3" Click="Voltar_Click">voltar</Button>
+            <Button Name="Avancar" Margin="10,3,10,3" Click="Avancar_Click">avançar</Button>
+            <CheckBox Name="Chk" Margin="10,10,10,10" Checked="Chk_Checked" Unchecked="Chk_Unchecked">texto longo</CheckBox>
+        </StackPanel>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="0,10,10,10"
+TextWrapping="WrapWithOverflow" Grid.RowSpan="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</TextBox>
+        <Button Grid.Row="1" Grid.Column="0" Name="cmdClose"
+Margin="10,3,10,10" Click="cmdClose_Click">Close</Button>
+    </Grid>
+</Window>

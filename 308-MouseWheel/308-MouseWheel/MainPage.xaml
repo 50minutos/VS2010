@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="_308_MouseWheel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="txbMouseWheelValue" Text="Mouse Wheel Value: 0" Margin="20"/>
+            <Border x:Name="brdWheeler" Height="100" Width="100" CornerRadius="20" Background="BurlyWood" BorderBrush="Brown" BorderThickness="2" RenderTransformOrigin="0.5, 0.5">
+                <Border.RenderTransform>
+                    <ScaleTransform x:Name="scaleBrdWheeler"/>
+                    <!--<RotateTransform x:Name="rotateBrdWheeler"/>-->
+                </Border.RenderTransform>
+            </Border>
+        </StackPanel>
+    </Grid>
+</UserControl>

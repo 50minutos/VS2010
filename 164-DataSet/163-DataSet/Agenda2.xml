@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<agenda>
+  <linha>
+    <nome>agnaldo diogo dos santos</nome>
+    <email>agnaldo@50minutos.com.br</email>
+  </linha>
+  <linha>
+    <nome>pedro henrique</nome>
+    <email>pedro@50minutos.com.br</email>
+  </linha>
+  <linha>
+    <nome>netinho</nome>
+    <email>netinho@50minutos.com.br</email>
+  </linha>
+  <linha>
+    <nome>renata</nome>
+    <email>renata@50minutos.com.br</email>
+  </linha>
+  <linha>
+    <nome>agnaldo</nome>
+    <email>diabonaldo@gmail.com</email>
+  </linha>
+</agenda>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="_272_Content.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel x:Name="layoutRoot">
+        <Button Content="Botão com texto" ToolTipService.ToolTip="dica para o botão" Padding="10" Margin="10" HorizontalAlignment="Center"></Button>
+
+        <Button Padding="10" Margin="80 10" HorizontalAlignment="Center">
+            <Button.Content>
+                <StackPanel>
+                    <Image Source="user_accept.png" HorizontalAlignment="Center" Width="64"></Image>
+                    <TextBlock Margin="3" Text="texto do botão" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+        <Button Margin="3">
+            <Grid>
+                <Polygon Points="100,25 125,0 200,25 125,50"
+Fill="Yellow" />
+                <Polygon Points="100,25 75,0 0,25 75,50"
+Fill="Green"/>
+            </Grid>
+        </Button>
+    </StackPanel>
+</Window>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "266-GridSplitter", "266-GridSplitter\266-GridSplitter.csproj", "{56D0AFCE-ECD8-4E00-AA2F-C63493560FD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56D0AFCE-ECD8-4E00-AA2F-C63493560FD3}.Debug|x86.ActiveCfg = Debug|x86
+		{56D0AFCE-ECD8-4E00-AA2F-C63493560FD3}.Debug|x86.Build.0 = Debug|x86
+		{56D0AFCE-ECD8-4E00-AA2F-C63493560FD3}.Release|x86.ActiveCfg = Release|x86
+		{56D0AFCE-ECD8-4E00-AA2F-C63493560FD3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

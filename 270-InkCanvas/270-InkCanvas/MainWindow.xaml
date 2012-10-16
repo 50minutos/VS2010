@@ -1,0 +1,9 @@
+﻿<Window x:Class="_270_InkCanvas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <InkCanvas Name="inkCanvas" Background="LightYellow" EditingMode="None">
+        <Image Source="GoldUser.jpg"  InkCanvas.Top="10" InkCanvas.Left="10" Width="256" Height="256"></Image>
+        <Button x:Name="B1" InkCanvas.Bottom="10" InkCanvas.Right="10" Click="B1_Click">Clique aqui para liberar os controles</Button>
+    </InkCanvas>
+</Window>

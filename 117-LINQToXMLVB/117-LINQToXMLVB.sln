@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "117-LINQToXMLVB", "117-LINQToXMLVB\117-LINQToXMLVB.vbproj", "{92A43DBC-896D-475F-BB6D-EE7E91E1E8F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92A43DBC-896D-475F-BB6D-EE7E91E1E8F5}.Debug|x86.ActiveCfg = Debug|x86
+		{92A43DBC-896D-475F-BB6D-EE7E91E1E8F5}.Debug|x86.Build.0 = Debug|x86
+		{92A43DBC-896D-475F-BB6D-EE7E91E1E8F5}.Release|x86.ActiveCfg = Release|x86
+		{92A43DBC-896D-475F-BB6D-EE7E91E1E8F5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

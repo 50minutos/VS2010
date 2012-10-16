@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "019-OperadoresTipo", "019-OperadoresTipo\019-OperadoresTipo.csproj", "{26418533-163B-4ADB-930C-85F056C22135}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26418533-163B-4ADB-930C-85F056C22135}.Debug|x86.ActiveCfg = Debug|x86
+		{26418533-163B-4ADB-930C-85F056C22135}.Debug|x86.Build.0 = Debug|x86
+		{26418533-163B-4ADB-930C-85F056C22135}.Release|x86.ActiveCfg = Release|x86
+		{26418533-163B-4ADB-930C-85F056C22135}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

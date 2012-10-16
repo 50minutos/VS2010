@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="_297_TwoWayBinding.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="180" d:DesignWidth="400">
+
+    <StackPanel>
+        <Slider x:Name="SliderTamanho" Margin="10" 
+ Minimum="1" Maximum="100" Value="20">
+        </Slider>
+        <TextBox Text="{Binding ElementName=Texto, Path=FontSize, Mode=TwoWay}" Width="100">
+        </TextBox>
+        <TextBlock Margin="10" Text="50minutos" x:Name="Texto" 
+ FontSize="{Binding ElementName=SliderTamanho, Path=Value, Mode=TwoWay}" HorizontalAlignment="Center">
+        </TextBlock>
+    </StackPanel>
+</UserControl>
